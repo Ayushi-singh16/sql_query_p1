@@ -103,6 +103,7 @@ select  avg(age),customer_id,category
 from sales 
 group by customer_id,category
 having category='Beauty'
+```
 
 5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
@@ -162,6 +163,7 @@ select count(distinct(customer_id)),
 category
 from sales
 group by 2
+```
 
 10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
 with hourly_sale as(
