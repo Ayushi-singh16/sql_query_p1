@@ -166,6 +166,7 @@ group by 2
 ```
 
 10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
+```sql
 with hourly_sale as(
 select *,
 case
@@ -179,6 +180,7 @@ select shift,
 count(*) as total_order
 from hourly_sale
 group by 1
+```
 
 ## Findings
 
